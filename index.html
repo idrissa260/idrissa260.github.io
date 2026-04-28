@@ -1,82 +1,475 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV - Idrissa SALL</title>
-
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #0f172a, #1e3a8a);
-      color: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-
-    .card {
-      background: rgba(255, 255, 255, 0.08);
-      backdrop-filter: blur(10px);
-      padding: 40px;
-      border-radius: 20px;
-      text-align: center;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-      max-width: 400px;
-      width: 90%;
-    }
-
-    h1 {
-      margin-bottom: 10px;
-      font-size: 32px;
-    }
-
-    p {
-      margin-bottom: 30px;
-      color: #cbd5f5;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 15px 25px;
-      font-size: 18px;
-      color: white;
-      text-decoration: none;
-      border-radius: 10px;
-      background: #3b82f6;
-      transition: all 0.3s ease;
-    }
-
-    .btn:hover {
-      background: #2563eb;
-      transform: translateY(-3px);
-      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    }
-
-    .footer {
-      margin-top: 20px;
-      font-size: 12px;
-      color: #94a3b8;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Idrissa SALL | Ingénieur IT - Systèmes, Réseaux, Cybersécurité & Data</title>
+  <meta
+    name="description"
+    content="Portfolio professionnel de Idrissa SALL - Ingénieur IT spécialisé en systèmes, réseaux, cybersécurité, cloud, automatisation et data."
+  />
+ 
+  <!-- Lien vers le CSS -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
 
-  <div class="card">
-    <h1>Idrissa SALL</h1>
-    <p>CV professionnel</p>
-
-    <a href="CV_IdrissaSALL.pdf" target="_blank" class="btn">
-      📄 Télécharger mon CV
-    </a>
-
-    <div class="footer">
-      © 2026 - Tous droits réservés
+  <header class="navbar">
+    <div class="nav-inner">
+      <a href="#top" class="logo">Idrissa<span>.</span></a>
+      <nav class="nav-links">
+        <a href="#about">À propos</a>
+        <a href="#experience">Expériences</a>
+        <a href="#skills">Compétences</a>
+        <a href="#projects">Projets</a>
+        <a href="#education">Formation</a>
+        <a href="#contact" class="nav-btn">Contact</a>
+      </nav>
     </div>
-  </div>
+  </header>
+
+  <main id="top">
+
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">Ingénieur IT • Réseaux • Cybersécurité • Data</div>
+          <h1>
+            Je conçois, sécurise et optimise des
+            <span>environnements techniques fiables.</span>
+          </h1>
+          <p class="hero-text">
+            Professionnel polyvalent, j’interviens sur l’administration systèmes et réseaux,
+            la sécurisation des infrastructures, l’automatisation des tâches, le support technique
+            et l’exploitation de la donnée pour améliorer la performance opérationnelle.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="CV_IdrissaSALL.pdf" target="_blank" class="btn btn-primary">📄 Voir mon CV</a>
+            <a href="https://github.com/idrissa260/idrissa260.github.io" target="_blank" class="btn btn-secondary">💻 GitHub</a>
+            <a href="#contact" class="btn btn-secondary">✉️ Me contacter</a>
+          </div>
+
+          <div class="hero-highlights">
+            <div class="highlight">
+              <strong>Systèmes & Réseaux</strong>
+              <span>Windows, Linux, TCP/IP, DNS, VPN, AD</span>
+            </div>
+            <div class="highlight">
+              <strong>Cybersécurité</strong>
+              <span>TLS, SSH, analyse réseau, vulnérabilités</span>
+            </div>
+            <div class="highlight">
+              <strong>Data & Automatisation</strong>
+              <span>Python, SQL, Power BI, Bash, PowerShell</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero-card">
+          <div class="profile-badge">Disponible pour opportunités</div>
+          
+          <div class="profile-photo">
+           <img src="IS_Profil.jpg" alt="Photo de Idrissa SALL" />
+          </div>
+          
+          <div class="profile-name">Idrissa SALL</div>
+          <div class="profile-role">
+            Ingénieur IT | Systèmes, Réseaux, Cybersécurité, Cloud & Data
+          </div>
+
+          <div class="profile-list">
+            <div class="profile-item">💼 Expérience en administration IT, support, sécurité, cloud et data</div>
+            <div class="profile-item">📍 Basé en Île-de-France, France</div>
+            <div class="profile-item">📞 07 51 13 97 65</div>
+            <div class="profile-item">📧 idrissasall260@gmail.com</div>
+          </div>
+
+          <a href="#experience" class="btn btn-secondary">Voir mon parcours</a>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">À propos</h2>
+        <p class="section-subtitle">
+          Un profil technique polyvalent, capable de relier infrastructure, sécurité,
+          automatisation et exploitation de la donnée.
+        </p>
+
+        <div class="card about-card">
+          <p>
+            Je suis un professionnel IT avec une expérience en administration systèmes et réseaux,
+            support technique, cybersécurité opérationnelle, cloud, automatisation et analyse de données.
+          </p>
+          <p>
+            Mon parcours m’a permis d’évoluer dans des environnements variés : gestion
+            d’infrastructures, accompagnement utilisateurs, projets data, supervision technique,
+            optimisation de processus et coordination d’équipes.
+          </p>
+          <p>
+            J’apprécie particulièrement les contextes où il faut à la fois comprendre les enjeux
+            techniques, sécuriser les usages, fiabiliser les outils et produire des résultats concrets.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="container">
+        <h2 class="section-title">Expériences clés</h2>
+        <p class="section-subtitle">
+          Des expériences complémentaires en administration IT, support, data, opérations et encadrement.
+        </p>
+
+        <div class="grid-2">
+          <article class="card timeline-card">
+            <span class="period">2024 – 2025 | La Courneuve</span>
+            <h3>Gérant / Administrateur IT — Idigit</h3>
+            <p>
+              Administration de systèmes Windows/Linux, gestion et sécurisation des environnements IT,
+              configuration de services réseau, mise en place de communications sécurisées, automatisation
+              de tâches et support utilisateurs.
+            </p>
+            <ul>
+              <li>Administration systèmes Windows / Linux</li>
+              <li>Configuration DNS, HTTP/HTTPS</li>
+              <li>Mise en place de TLS, SSH</li>
+              <li>Surveillance et analyse des flux réseau</li>
+              <li>Automatisation Bash / PowerShell</li>
+            </ul>
+          </article>
+
+          <article class="card timeline-card">
+            <span class="period">2022 – 2023 | Neuilly-sur-Seine</span>
+            <h3>Ingénieur Informatique — Magic Makers</h3>
+            <p>
+              Support IT N1/N2, gestion des incidents, maintenance systèmes et réseau,
+              développement d’outils techniques et accompagnement à la programmation Python.
+            </p>
+            <ul>
+              <li>Support technique et résolution d’incidents</li>
+              <li>Maintenance des postes et environnements IT</li>
+              <li>Développement d’outils techniques</li>
+              <li>Formation / accompagnement à Python</li>
+            </ul>
+          </article>
+
+          <article class="card timeline-card">
+            <span class="period">2018 – 2021 | Dakar</span>
+            <h3>Responsable Informatique — Fablab de Kerthiossane</h3>
+            <p>
+              Administration systèmes Windows/Linux, gestion du SI, support utilisateurs,
+              encadrement d’une équipe de 7 personnes et pilotage de projets techniques liés à l’IoT
+              et au prototypage.
+            </p>
+            <ul>
+              <li>Gestion du système d’information</li>
+              <li>Support utilisateurs et maintenance</li>
+              <li>Encadrement d’équipe</li>
+              <li>Projets techniques IoT et prototypage</li>
+            </ul>
+          </article>
+
+          <article class="card timeline-card">
+            <span class="period">2023 | Saint-Avold</span>
+            <h3>Ingénieur Data — Arkema</h3>
+            <p>
+              Structuration et analyse de données R&D multi-sources, mise en place de KPI,
+              automatisation de reporting, sécurisation des flux de données et contribution à un projet Agile.
+            </p>
+            <ul>
+              <li>Analyse de 20 datasets multi-sources</li>
+              <li>Mise en place de KPI et reporting</li>
+              <li>Sécurisation des flux de données</li>
+              <li>Travail en méthodologie Agile / SCRUM</li>
+            </ul>
+          </article>
+
+          <article class="card timeline-card">
+            <span class="period">2025 | Villiers</span>
+            <h3>Responsable de Quai — Trusk</h3>
+            <p>
+              Pilotage de flux logistiques complexes, suivi de KPI opérationnels, amélioration de la conformité
+              et digitalisation des processus dans un environnement à forte intensité opérationnelle.
+            </p>
+            <ul>
+              <li>Jusqu’à 30 camions et 60 opérateurs</li>
+              <li>Amélioration de la conformité de 30 % à 95 %</li>
+              <li>Suivi en temps réel des opérations</li>
+              <li>Analyse de la performance opérationnelle</li>
+            </ul>
+          </article>
+
+          <article class="card timeline-card">
+            <span class="period">2017 – 2018 | Bambey</span>
+            <h3>Chargé d’analyse de données — ISRA / CNRA</h3>
+            <p>
+              Analyse de données, reporting, suivi de KPI et développement d’un prototype IoT agricole,
+              dans un cadre orienté terrain et innovation.
+            </p>
+            <ul>
+              <li>Reporting sous Excel et Power BI</li>
+              <li>Suivi de KPI et pilotage data</li>
+              <li>Prototype IoT appliqué à l’agriculture</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">Compétences techniques</h2>
+        <p class="section-subtitle">
+          Un socle transverse combinant systèmes, réseaux, sécurité, cloud, automatisation et data.
+        </p>
+
+        <div class="grid-2">
+          <article class="card">
+            <h3>Systèmes & Réseaux</h3>
+            <span class="tag">Windows</span>
+            <span class="tag">Linux</span>
+            <span class="tag">TCP/IP</span>
+            <span class="tag">IPv4/IPv6</span>
+            <span class="tag">DNS</span>
+            <span class="tag">DHCP</span>
+            <span class="tag">HTTP/HTTPS</span>
+            <span class="tag">VPN</span>
+            <span class="tag">Active Directory</span>
+            <span class="tag">Office 365</span>
+            <span class="tag">Intune</span>
+            <span class="tag">Wireshark</span>
+            <span class="tag">Tcpdump</span>
+          </article>
+
+          <article class="card">
+            <h3>Cybersécurité</h3>
+            <span class="tag">Sécurisation des communications</span>
+            <span class="tag">TLS</span>
+            <span class="tag">SSH</span>
+            <span class="tag">Tunnels sécurisés</span>
+            <span class="tag">Proxy SOCKS</span>
+            <span class="tag">Proxy HTTP</span>
+            <span class="tag">Nmap</span>
+            <span class="tag">Metasploit</span>
+            <span class="tag">PKI</span>
+            <span class="tag">Certificats X.509</span>
+          </article>
+
+          <article class="card">
+            <h3>Cloud, API & DevOps</h3>
+            <span class="tag">Microsoft Azure</span>
+            <span class="tag">REST API</span>
+            <span class="tag">API Management</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Git</span>
+            <span class="tag">GitHub</span>
+            <span class="tag">Jenkins</span>
+            <span class="tag">Bash</span>
+            <span class="tag">PowerShell</span>
+            <span class="tag">Ansible</span>
+          </article>
+
+          <article class="card">
+            <h3>Data & BI</h3>
+            <span class="tag">Python</span>
+            <span class="tag">SQL</span>
+            <span class="tag">Excel</span>
+            <span class="tag">Power BI</span>
+            <span class="tag">KPI</span>
+            <span class="tag">Reporting</span>
+            <span class="tag">Data visualisation</span>
+            <span class="tag">Databricks</span>
+            <span class="tag">MLflow</span>
+            <span class="tag">TensorFlow</span>
+            <span class="tag">Keras</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Projets techniques</h2>
+        <p class="section-subtitle">
+          Des projets qui reflètent mon positionnement hybride : sécurité, infrastructure, data et innovation.
+        </p>
+
+        <div class="grid-2">
+          <article class="card project-card">
+            <h3>Projet Réseaux & Cybersécurité</h3>
+            <p>
+              Configuration d’un serveur web sécurisé avec DNS, Nginx et HTTPS,
+              mise en place de certificats TLS Let’s Encrypt, tunnels SSH, analyse de trafic réseau
+              et évaluation de vulnérabilités.
+            </p>
+            <p>
+              Ce projet valorise mon socle infrastructure, sécurité et administration réseau.
+            </p>
+          </article>
+
+          <article class="card project-card">
+            <h3>Encadrement technique & Projets IT / Réseaux</h3>
+            <p>
+              Accompagnement d’apprenants sur des problématiques systèmes, réseaux et cybersécurité,
+              participation à des configurations réseau et web, sensibilisation à la sécurisation
+              des communications et à l’analyse des flux.
+            </p>
+          </article>
+
+          <article class="card project-card">
+            <h3>Projets Data & Automatisation</h3>
+            <p>
+              Création de dashboards Power BI, automatisation de reporting, modèle prédictif Airbnb,
+              optimisation de processus et mise en place d’indicateurs de performance.
+            </p>
+          </article>
+
+          <article class="card project-card">
+            <h3>Projet E-commerce & Data</h3>
+            <p>
+              Création d’une boutique Shopify, analyse des performances trafic / conversion / ventes,
+              mise en place de KPI, automatisation marketing et optimisation basée sur les données.
+            </p>
+          </article>
+
+          <article class="card project-card">
+            <h3>Tech & Innovation</h3>
+            <p>
+              Prototypage IoT, électronique DIY, systèmes embarqués, impression 3D, domotique open-source
+              et automatisation de processus techniques.
+            </p>
+          </article>
+
+          <article class="card project-card">
+            <h3>Prototype IoT agricole</h3>
+            <p>
+              Développement d’un prototype IoT appliqué au terrain, illustrant ma capacité à relier
+              matériel, données, innovation et usages concrets.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <div class="container">
+        <h2 class="section-title">Formation & certifications</h2>
+        <p class="section-subtitle">
+          Un parcours solide à l’intersection des systèmes d’information, des réseaux, du cloud et de la sécurité.
+        </p>
+
+        <div class="grid-2">
+          <article class="card">
+            <h3>Master en Architecture des Systèmes d’Information</h3>
+            <span class="period">L’école IT — Orléans, France</span>
+            <p>
+              API & intégration de systèmes, cybersécurité, supervision SI, data engineering,
+              cloud Azure et architecture des environnements d’information.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Ingénieur Réseaux & Services Mobiles</h3>
+            <span class="period">ESMT — Dakar, Sénégal</span>
+            <p>
+              Réseaux IP, télécommunications, protocoles réseau, systèmes embarqués,
+              programmation C/C++ et traitement du signal.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Classes Préparatoires Conjointes</h3>
+            <span class="period">ESMT — Dakar, Sénégal</span>
+            <p>
+              Formation scientifique intensive en mathématiques, physique, algorithmique,
+              électronique et bases des réseaux.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Langues</h3>
+            <p>
+              Français : natif<br />
+              Anglais : technique
+            </p>
+          </article>
+        </div>
+
+        <div class="card" style="margin-top: 22px;">
+          <h3 style="margin-bottom: 18px;">Certifications</h3>
+          <div class="cert-list">
+            <div class="cert-item">
+              <strong>Microsoft Azure SC-900</strong> Microsoft Security, Compliance, and Identity Fundamentals
+            </div>
+            <div class="cert-item">
+             <strong>Microsoft Power Platform PL-900</strong> Fundamentals de la Power Platform
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="grid-3">
+          <article class="card">
+            <h3>Ce que j’apporte</h3>
+            <p>
+              Une capacité à intervenir à la croisée de l’infrastructure, du support,
+              de la sécurité, de l’automatisation et de la donnée.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Ma méthode</h3>
+            <p>
+              Comprendre l’existant, fiabiliser les outils, sécuriser les flux,
+              automatiser ce qui peut l’être et suivre la performance avec des indicateurs utiles.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Mes environnements de prédilection</h3>
+            <p>
+              IT operations, support avancé, systèmes et réseaux, sécurité opérationnelle,
+              cloud, data engineering léger et amélioration continue.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="contact-box">
+          <h2>Travaillons ensemble</h2>
+          <p>
+            Pour une opportunité, une collaboration ou une prise de contact professionnelle,
+            vous pouvez me joindre via les coordonnées ci-dessous.
+          </p>
+
+          <div class="hero-buttons" style="justify-content:center;">
+            <a href="mailto:idrissasall260@gmail.com" class="btn btn-primary">✉️ Email</a>
+            <a href="tel:+33751139765" class="btn btn-secondary">📞 07 51 13 97 65</a>
+            <a href="https://github.com/idrissa260/idrissa260.github.io" target="_blank" class="btn btn-secondary">💻 GitHub</a>
+            <a href="#" class="btn btn-secondary">🔗 LinkedIn bientôt</a>
+          </div>
+
+          <div class="contact-details">
+            <strong>Email :</strong> idrissasall260@gmail.com<br>
+            <strong>Téléphone :</strong> 07 51 13 97 65<br>
+            <strong>Adresse :</strong> Île-de-France, France
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    © 2026 Idrissa SALL — Portfolio professionnel
+  </footer>
 
 </body>
 </html>
